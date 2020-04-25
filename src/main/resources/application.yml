@@ -1,0 +1,14 @@
+greeting.message: Hello
+
+# can refer to other property
+app:
+  name: "My App"
+  desc: "Welcome to ${app.name}"
+
+spring.application.name: spring-cloud-config-client
+spring.cloud.config.uri: http://localhost:8888
+
+db:
+  connection: "{connectionString: 'http://----', username: 'uname', password: 'pass'}"
+  host: 127.0.0.1
+  port: 5432
